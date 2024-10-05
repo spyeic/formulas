@@ -6,7 +6,7 @@ import Layout from "@/components/layout";
 function Index(): React.ReactElement {
     const router = useRouter();
     useEffect(() => {
-        router.push("/math125");
+        router.push("/math126");
     }, [router]);
     return <Layout>
         <div></div>

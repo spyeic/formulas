@@ -145,14 +145,14 @@ function Index(): React.ReactElement {
         }
     };
     return <Layout>
-        <div hidden={hidden}>
-            <Card className={"mx-[10%] my-5 py-2 px-5 overflow-x-auto"}>
+        <div className={"py-5"} hidden={hidden}>
+            <Card className={"md:mx-[10%] xl:mx-[18%] py-2 px-10 bg-opacity-30"}>
                 <MathJaxContext config={config}>
-                    <div>
+                    <div className={"to-print"}>
                         {formulaList}
-                        <div className={"flex justify-center items-center py-3"}>
-                            <Button className={"w-[50%]"} variant={"light"} onClick={() => window.print()}>Print</Button>
-                        </div>
+                    </div>
+                    <div className={"flex justify-center items-center py-3"}>
+                        <Button className={"w-[50%]"} variant={"light"} onClick={() => window.print()}>Print</Button>
                     </div>
                 </MathJaxContext>
             </Card>

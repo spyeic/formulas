@@ -51,10 +51,19 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-#content > #contentdp {
-    visibility: hidden;
-}
+@media print {
+    body {
+        visibility: hidden;
+    }
 
-#content > img {
-    width: 100%;
+    .no-print-block {
+        display: none;
+    }
+
+    .to-print {
+        visibility: visible;
+    }
+    .to-print * {
+        font-size: 1rem;
+    }
 }
