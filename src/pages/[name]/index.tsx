@@ -1,6 +1,7 @@
 import { Card } from "@nextui-org/card";
 import { Button } from "@nextui-org/react";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
@@ -145,6 +146,9 @@ function Index(): React.ReactElement {
         }
     };
     return <Layout>
+        <Head>
+            <title>Formulas: {router.query.name}</title>
+        </Head>
         <div className={"py-5"} hidden={hidden}>
             <Card className={"md:mx-[10%] xl:mx-[18%] py-2 px-10 bg-opacity-30"}>
                 <MathJaxContext config={config}>
