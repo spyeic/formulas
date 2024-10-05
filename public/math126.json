@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Vector Formulas",
+        "description": "`a = <a_1, a_2, a_3>`, `b = <b_1, b_2, b_3>`, `m = <m_1, m_2>`, `n = <n_1, n_2>`",
+        "formulas": [
+            "\\vec{a} \\cdot \\vec{b} = a_1b_1 + a_2b_2 + a_3b_3",
+            "\\vec{a} \\cdot \\vec{b} = |\\vec{a}||\\vec{b}|\\cos(\\theta)",
+            "\\vec{a} \\cdot \\vec{a} = |\\vec{a}|^2",
+            "\\begin{bmatrix}a & b\\\\c & d\\end{bmatrix} = ad - bc",
+            "\\begin{bmatrix}a & b & c\\\\d & e & f\\\\g & h & i\\end{bmatrix} = a\\begin{bmatrix}e & f\\\\h & i\\end{bmatrix} - b\\begin{bmatrix}d & f\\\\g & i\\end{bmatrix} + c\\begin{bmatrix}d & e\\\\g & h\\end{bmatrix}",
+            "\\vec{a} \\times \\vec{b} = \\begin{bmatrix}i & j & k\\\\a_1 & a_2 & a_3\\\\b_1 & b_2 & b_3\\end{bmatrix} = i(a_2b_3 - a_3b_2) - j(a_1b_3 - a_3b_1) + k(a_1b_2 - a_2b_1)",
+            "\\vec{a} \\times \\vec{b} = |\\vec{a}||\\vec{b}|\\sin(\\theta)",
+            "proj_{\\vec{b}}\\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{\\vec{b} \\cdot \\vec{b}}\\vec{b}"
+        ]
+    }
+]

@@ -1,0 +1,6 @@
+{
+    "extends": ["next/core-web-vitals", "spyeic/typescript"],
+    "rules": {
+        "react/no-is-mounted": "off"
+    }
+}

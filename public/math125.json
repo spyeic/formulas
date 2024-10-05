@@ -1,0 +1,107 @@
+[
+    {
+        "title": "Table of Integration Formulas",
+        "description": "(constant of integration C is omitted)",
+        "formulas": [
+            "\\int x^n dx = \\frac{x^{n+1}}{n+1}, (n \\neq -1)",
+            "\\int \\frac{1}{x} dx = \\ln|x|",
+            "\\int e^x dx = e^x",
+            "\\int a^x dx = \\frac{a^x}{\\ln(a)}, (a > 0, a \\neq 1)",
+            "\\int \\sin(x) dx = -\\cos(x)",
+            "\\int \\cos(x) dx = \\sin(x)",
+            "\\int \\sec^2(x) dx = \\tan(x)",
+            "\\int \\csc^2(x) dx = -\\cot(x)",
+            "\\int \\sec(x)\\tan(x) dx = \\sec(x)",
+            "\\int \\csc(x)\\cot(x) dx = -\\csc(x)",
+            "\\int \\sec(x) dx = \\ln|\\sec(x) + \\tan(x)|",
+            "\\int \\csc(x) dx = \\ln|\\csc(x) - \\cot(x)|",
+            "\\int \\tan(x) dx = \\ln|\\sec(x)|",
+            "\\int \\cot(x) dx = \\ln|\\sin(x)|",
+            "\\int \\frac{1}{a^2 + x^2} dx = \\frac{1}{a}\\arctan(\\frac{x}{a})",
+            "\\int \\frac{1}{\\sqrt{a^2 - x^2}} dx = \\arcsin(\\frac{x}{a}), (a > 0)"
+        ],
+        "format": {
+            "sm": 2,
+            "md": 2,
+            "lg": 3,
+            "xl": 3,
+            "xxl": 3
+        }
+    },
+    {
+        "title": "Trigonometric Formulas",
+        "formulas": [
+            "\\sin^2(x) + \\cos^2(x) = 1",
+            "\\tan^2(x) + 1 = \\sec^2(x)",
+            "\\cot^2(x) + 1 = \\csc^2(x)",
+            "\\sin(2x) = 2\\sin(x)\\cos(x)",
+            "\\cos(2x) = \\cos^2(x) - \\sin^2(x)",
+            "\\cos(2x) = 2\\cos^2(x) - 1",
+            "\\cos^2(x) = \\frac{1}{2}(1 + \\cos(2x))",
+            "\\sin^2(x) = \\frac{1}{2}(1 - \\cos(2x))"
+        ],
+        "format": {
+            "sm": 2,
+            "md": 2,
+            "lg": 2,
+            "xl": 2,
+            "xxl": 3
+        }
+    },
+    {
+        "title": "Trigonometric Substitution",
+        "formulas": [
+            "x = a\\sin(\\theta), (-\\frac{\\pi}{2}\\leq\\theta\\leq\\frac{\\pi}{2}) \\text{ when } \\sqrt{a^2 - x^2}",
+            "x = a\\tan(\\theta), (-\\frac{\\pi}{2} < \\theta <\\frac{\\pi}{2}) \\text{ when } \\sqrt{a^2 + x^2}",
+            "x = a\\sec(\\theta), (0\\leq\\theta < \\frac{\\pi}{2}\\text{ or }\\pi\\leq\\theta < \\frac{3\\pi}{2})\\text{ when } \\sqrt{x^2 - a^2}"
+        ],
+        "format": {
+            "lg": 2,
+            "xxl": 2
+        }
+    },
+    {
+        "title": "Approximate Integration",
+        "description": "`K` is a constant that satisfies `|f''(x)| \\leq K` for all `x` in `[a, b]` and `E` is the error bound.",
+        "formulas": [
+            {
+                "title": "Midpoint Rule",
+                "formulas": [
+                    "\\int_a^b f(x)dx \\approx \\Delta x(f(\\overline{x}_1) + f(\\overline{x}_2) + \\ldots + f(\\overline{x}_n))",
+                    "|E| \\leq \\frac{K(b-a)^3}{24n^2}"
+                ]
+            },
+            {
+                "title": "Trapezoidal Rule",
+                "formulas": [
+                    "\\int_a^b f(x)dx \\approx \\frac{\\Delta x}{2}(f(a) + 2f(x_1) + 2f(x_2) + \\ldots + 2f(x_{n-1}) + f(b))",
+                    "|E| \\leq \\frac{K(b-a)^3}{12n^2}"
+                ]
+            },
+            {
+                "title": "Simpson's Rule",
+                "formulas": [
+                    "\\int_a^b f(x)dx \\approx \\frac{\\Delta x}{3}(f(a) + 4f(x_1) + 2f(x_2) + \\ldots + 2f(x_{n-2}) + 4f(x_{n-1}) + f(b))",
+                    "|E| \\leq \\frac{K(b-a)^5}{180n^4}"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Moment and Center of Mass",
+        "description": "`m` is the mass of the object, `A` is the area of the object.",
+        "formulas": [
+            "M_y = \\rho\\int_a^b xf(x)dx",
+            "M_x = \\rho\\int_a^b \\frac{1}{2}[f(x)]^2dx",
+            "\\bar{x} = \\frac{M_y}{m} = \\frac{1}{A}\\int_a^b xf(x)dx",
+            "\\bar{y} = \\frac{M_x}{m} = \\frac{1}{A}\\int_a^b \\frac{1}{2}[f(x)]^2dx"
+        ]
+    },
+    {
+        "title": "Cheatsheet",
+        "formulas": [
+            "\\int\\sec^3(x)dx = \\frac{1}{2}\\sec(x)\\tan(x) + \\frac{1}{2}\\ln|\\sec(x) + \\tan(x)| + C",
+            "\\int\\tan^2(x)\\sec(x)dx = \\frac{1}{2}\\sec(x)\\tan(x) - \\frac{1}{2}\\ln|\\sec(x) + \\tan(x)| + C"
+        ]
+    }
+]
