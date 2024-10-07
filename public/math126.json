@@ -12,5 +12,27 @@
             "\\vec{a} \\times \\vec{b} = |\\vec{a}||\\vec{b}|\\sin(\\theta)",
             "proj_{\\vec{b}}\\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{\\vec{b} \\cdot \\vec{b}}\\vec{b}"
         ]
+    },
+    {
+        "title": "Vector Equation of a Line",
+        "description": "`\\vec{r}_0 = <x_0, y_0, z_0>` is the initial position vector and `t` is the parameter",
+        "formulas": [
+            "\\vec{r} = \\vec{r}_0 + t\\vec{v} = <x_0, y_0, z_0> + t<v_1, v_2, v_3>",
+            {
+                "title": "Parametric Equations",
+                "formulas": [
+                    "\\vec{r} = <x_0 + at, y_0 + bt, z_0 + ct>",
+                    "x = x_0 + tv_1",
+                    "y = y_0 + tv_2",
+                    "z = z_0 + tv_3"
+                ]
+            },
+            {
+                "title": "Symmetric Equations",
+                "formulas": [
+                    "\\frac{x - x_0}{a} = \\frac{y - y_0}{b} = \\frac{z - z_0}{c}"
+                ]
+            }
+        ]
     }
 ]
