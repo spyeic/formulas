@@ -1,27 +1,39 @@
 [
     {
         "title": "Vector Formulas",
-        "description": "`a = <a_1, a_2, a_3>`, `b = <b_1, b_2, b_3>`, `m = <m_1, m_2>`, `n = <n_1, n_2>`",
+        "description": "`\\textbf{a} = <a_1, a_2, a_3>`, `\\textbf{b} = <b_1, b_2, b_3>`, `\\textbf{m} = <m_1, m_2>`, `\\textbf{n} = <n_1, n_2>`",
         "formulas": [
-            "\\vec{a} \\cdot \\vec{b} = a_1b_1 + a_2b_2 + a_3b_3",
-            "\\vec{a} \\cdot \\vec{b} = |\\vec{a}||\\vec{b}|\\cos(\\theta)",
-            "\\vec{a} \\cdot \\vec{a} = |\\vec{a}|^2",
-            "\\begin{bmatrix}a & b\\\\c & d\\end{bmatrix} = ad - bc",
-            "\\begin{bmatrix}a & b & c\\\\d & e & f\\\\g & h & i\\end{bmatrix} = a\\begin{bmatrix}e & f\\\\h & i\\end{bmatrix} - b\\begin{bmatrix}d & f\\\\g & i\\end{bmatrix} + c\\begin{bmatrix}d & e\\\\g & h\\end{bmatrix}",
-            "\\vec{a} \\times \\vec{b} = \\begin{bmatrix}i & j & k\\\\a_1 & a_2 & a_3\\\\b_1 & b_2 & b_3\\end{bmatrix} = i(a_2b_3 - a_3b_2) - j(a_1b_3 - a_3b_1) + k(a_1b_2 - a_2b_1)",
-            "\\vec{a} \\times \\vec{b} = |\\vec{a}||\\vec{b}|\\sin(\\theta)",
-            "proj_{\\vec{b}}\\vec{a} = \\frac{\\vec{a} \\cdot \\vec{b}}{\\vec{b} \\cdot \\vec{b}}\\vec{b}"
+            {
+                "title": "Dot Product",
+                "formulas": [
+                    "\\textbf{a} \\cdot \\textbf{b} = a_1b_1 + a_2b_2 + a_3b_3",
+                    "\\textbf{a} \\cdot \\textbf{b} = |\\textbf{a}||\\textbf{b}|\\cos(\\theta)",
+                    "\\textbf{a} \\cdot \\textbf{a} = |\\textbf{a}|^2"
+                ]
+            },
+            {
+                "title": "Cross Product",
+                "formulas": [
+                    "\\begin{bmatrix}a & b\\\\c & d\\end{bmatrix} = ad - bc",
+                    "\\begin{bmatrix}a & b & c\\\\d & e & f\\\\g & h & i\\end{bmatrix} = a\\begin{bmatrix}e & f\\\\h & i\\end{bmatrix} - b\\begin{bmatrix}d & f\\\\g & i\\end{bmatrix} + c\\begin{bmatrix}d & e\\\\g & h\\end{bmatrix}",
+                    "\\textbf{a} \\times \\textbf{b} = \\begin{bmatrix}i & j & k\\\\a_1 & a_2 & a_3\\\\b_1 & b_2 & b_3\\end{bmatrix} = i(a_2b_3 - a_3b_2) - j(a_1b_3 - a_3b_1) + k(a_1b_2 - a_2b_1)",
+                    "|\\textbf{a} \\times \\textbf{b}| = |\\textbf{a}||\\textbf{b}|\\sin(\\theta)",
+                    "\\textbf{a} \\times \\textbf{b} = 0 \\text{ if } \\textbf{a} \\parallel \\textbf{b}"
+                ]
+            },
+            "\\text{comp}_{\\textbf{a}}\\textbf{b} = \\frac{\\textbf{a} \\cdot \\textbf{b}}{|\\textbf{a}|}",
+            "\\text{proj}_{\\textbf{a}}\\textbf{b} = \\frac{\\textbf{a} \\cdot \\textbf{b}}{\\textbf{a} \\cdot \\textbf{a}}\\textbf{a}"
         ]
     },
     {
         "title": "Vector Equation of a Line",
-        "description": "`\\vec{r}_0 = <x_0, y_0, z_0>` is the initial position vector and `t` is the parameter",
+        "description": "`\\textbf{r}_0 = <x_0, y_0, z_0>` is the initial position textbftor and `t` is the parameter",
         "formulas": [
-            "\\vec{r} = \\vec{r}_0 + t\\vec{v} = <x_0, y_0, z_0> + t<v_1, v_2, v_3>",
+            "\\textbf{r} = \\textbf{r}_0 + t\\textbf{v} = <x_0, y_0, z_0> + t<v_1, v_2, v_3>",
             {
                 "title": "Parametric Equations",
                 "formulas": [
-                    "\\vec{r} = <x_0 + at, y_0 + bt, z_0 + ct>",
+                    "\\textbf{r} = <x_0 + at, y_0 + bt, z_0 + ct>",
                     "x = x_0 + tv_1",
                     "y = y_0 + tv_2",
                     "z = z_0 + tv_3"
@@ -31,6 +43,21 @@
                 "title": "Symmetric Equations",
                 "formulas": [
                     "\\frac{x - x_0}{a} = \\frac{y - y_0}{b} = \\frac{z - z_0}{c}"
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Vector Equation of a Plane",
+        "description": "`\\textbf{r}_0 = <x_0, y_0, z_0>` is a point on the plane and `\\textbf{n} = <a, b, c>` is the normal textbftor",
+        "formulas": [
+            "\\textbf{n} \\cdot (\\textbf{r} - \\textbf{r}_0) = 0",
+            "a(x - x_0) + b(y - y_0) + c(z - z_0) = 0",
+            "ax + by + cz + d = 0",
+            {
+                "title": "Distance from a Point to a Plane",
+                "formulas": [
+                    "d = \\frac{|ax_0 + by_0 + cz_0 + d|}{\\sqrt{a^2 + b^2 + c^2}}"
                 ]
             }
         ]
