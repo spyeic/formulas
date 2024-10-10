@@ -107,7 +107,7 @@ function Index(): React.ReactElement {
                         }}>{`\\(\\displaystyle ${formula}\\)`}</MathJax>
                     </div>;
                 }
-                return <div className={"pl-2 pt-2 col-span-12"}>
+                return <div className={"pl-5 pt-2 col-span-12"}>
                     <div className={"text-2xl"}>{formula.title}</div>
                     <div className={"text-base pt-1 pl-1 opacity-60"}>
                         {getDesc(formula)}
