@@ -61,5 +61,25 @@
                 ]
             }
         ]
+    },
+    {
+        "title": "Derivatives and Integrals of Vector Functions",
+        "description": "`\\textbf{r}(t) = <f(t), g(t), h(t)>`",
+        "formulas": [
+            "\\textbf{r}'(t) = <f'(t), g'(t), h'(t)>",
+            "\\int_b^a\\textbf{r}(t)dt = <\\int_b^a f(t)dt, \\int_b^a g(t)dt, \\int_b^a h(t)dt>",
+            {
+                "title": "Differentiation Rules",
+                "formulas": [
+                    "[\\textbf{u}(t) + \\textbf{v}(t)]' = \\textbf{u}'(t) + \\textbf{v}'(t)",
+                    "[c\\textbf{u}(t)]' = c\\textbf{u}'(t)",
+                    "[f(t)\\textbf{u}(t)]' = f'(t)\\textbf{u}(t) + f(t)\\textbf{u}'(t)",
+                    "[\\textbf{u}(t) \\cdot \\textbf{v}(t)]' = \\textbf{u}'(t) \\cdot \\textbf{v}(t) + \\textbf{u}(t) \\cdot \\textbf{v}'(t)",
+                    "[\\textbf{u}(t) \\times \\textbf{v}(t)]' = \\textbf{u}'(t) \\times \\textbf{v}(t) + \\textbf{u}(t) \\times \\textbf{v}'(t)",
+                    "[\\textbf{u}(f(t))] = \\textbf{u}'(f(t))f'(t)"
+                ]
+            },
+            "\\text{If }|r(t)| = c \\text{ then } \\textbf{r}(t) \\cdot \\textbf{r}'(t) = 0"
+        ]
     }
 ]
