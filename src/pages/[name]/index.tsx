@@ -109,7 +109,7 @@ function Index(): React.ReactElement {
                 }
                 return <div className={"pl-5 pt-2 col-span-12"}>
                     <div className={"text-2xl"}>{formula.title}</div>
-                    <div className={"text-base pt-1 pl-1 opacity-60"}>
+                    <div className={"text-base pt-1 pb-1 pl-1 opacity-60"}>
                         {getDesc(formula)}
                     </div>
                     {formula.formulas.map(formula => getFormula(formula))}
@@ -117,7 +117,7 @@ function Index(): React.ReactElement {
             }
             return <div key={formula.title}>
                 <div className={"text-3xl py-2"}>{formula.title}</div>
-                <div className={"text-base pt-1 pl-1 opacity-60"}>
+                <div className={"text-base pt-1 pb-1 pl-1 opacity-60"}>
                     {getDesc(formula)}
                 </div>
                 <div className={"grid grid-cols-12"}>
