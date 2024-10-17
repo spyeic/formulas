@@ -13,10 +13,12 @@
         "@react-spring/web": "^9.7.4",
         "better-react-mathjax": "^2.0.3",
         "framer-motion": "^10.18.0",
+        "mathlive": "^0.101.1",
         "next": "14.0.4",
         "next-themes": "^0.2.1",
         "react": "^18.3.1",
-        "react-dom": "^18.3.1"
+        "react-dom": "^18.3.1",
+        "react-hot-toast": "^2.4.1"
     },
     "devDependencies": {
         "@types/node": "^20.16.5",
