@@ -4,6 +4,7 @@ import storage, { makeId } from "@/lib/storage";
 
 import type { NextApiRequest, NextApiResponse } from "next";
 
+export const runtime = "edge";
 
 export default async function handler(
     req: NextApiRequest,
