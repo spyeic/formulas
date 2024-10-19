@@ -56,7 +56,7 @@ function Index(): React.ReactElement {
     }, [loaded, params]);
     return <Layout>
         <Head>
-            <title>Calculator</title>
+            <title>Share Formulas</title>
         </Head>
         <Script src="https://unpkg.com/mathlive" onReady={() => {
             setLoad(true);
