@@ -81,5 +81,30 @@
             },
             "\\text{If }|r(t)| = c \\text{ then } \\textbf{r}(t) \\cdot \\textbf{r}'(t) = 0"
         ]
+    },
+    {
+        "title": "Arc Length and Curvature",
+        "description": "`\\textbf{r}(t) = <f(t), g(t), h(t)>`",
+        "formulas": [
+            "\\textbf{T}(t) = \\frac{\\textbf{r}'(t)}{|\\textbf{r}'(t)|}",
+            "\\textbf{N}(t) = \\frac{\\textbf{T}'(t)}{|\\textbf{T}'(t)|}",
+            "\\textbf{B}(t) = \\textbf{T}(t) \\times \\textbf{N}(t)",
+            {
+                "title": "Arc Length",
+                "formulas": [
+                    "s = \\int_a^b|\\textbf{r}'(t)|dt",
+                    "\\frac{ds}{dt} = |\\textbf{r}'(t)|",
+                    "s = \\int_a^b\\sqrt{[f'(t)]^2 + [g'(t)]^2 + [h'(t)]^2}dt"
+                ]
+            },
+            {
+                "title": "Curvature",
+                "formulas": [
+                    "\\kappa = |\\frac{d\\textbf{T}}{ds}|",
+                    "\\kappa(t) = \\frac{|\\textbf{T}'(t)|}{|\\textbf{r}'(t)|} = \\frac{|\\textbf{r}'(t) \\times \\textbf{r}''(t)|}{|\\textbf{r}'(t)|^3}",
+                    "\\kappa(x) = \\frac{|f''(x)|}{[1 + [f'(x)]^2]^{3/2}} \\text{ if } y = f(x)"
+                ]
+            }
+        ]
     }
 ]
