@@ -106,5 +106,16 @@
                 ]
             }
         ]
+    },
+    {
+        "title": "Velocity and Acceleration",
+        "description": "`\\textbf{r}(t) = <f(t), g(t), h(t)>` and `\\textbf{a}(t) = \\textbf{v}'(t) = \\textbf{r}''(t)`",
+        "formulas": [
+            "\\textbf{T}(t) = \\frac{\\textbf{r}'(t)}{|\\textbf{r}'(t)|} = \\frac{\\textbf{v}(t)}{|\\textbf{v}(t)|} = \\frac{\\textbf{v}}{v}",
+            "\\textbf{a} = v'\\textbf{T} + v\\textbf{T}' = v'\\textbf{T} + \\kappa v^2\\textbf{N} = \\textbf{a}_T + \\textbf{a}_N",
+            "\\textbf{a} = a_T\\textbf{T} + a_N\\textbf{N}\\text{ where } a_T = v', a_N = \\kappa v^2",
+            "a_T = \\frac{\\textbf{r}'(t) \\cdot \\textbf{r}''(t)}{|\\textbf{r}'(t)|}",
+            "a_N = \\frac{|\\textbf{r}'(t) \\times \\textbf{r}''(t)|}{|\\textbf{r}'(t)|}"
+        ]
     }
 ]
