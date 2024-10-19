@@ -2,7 +2,7 @@ import { Card } from "@nextui-org/card";
 import { Button } from "@nextui-org/react";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Head from "next/head";
-import { useRouter } from "next/router";
+import { useRouter, withRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 import Layout from "@/components/layout";
@@ -74,7 +74,6 @@ const xxlMap: SizeMap = {
 
 function Index(): React.ReactElement {
     const router = useRouter();
-    const [hidden, setHidden] = useState<boolean>(true);
     const [formulaObj, setFormulaObj] = useState<FormulaResponse>([] as unknown as FormulaResponse);
 
     function toFormulaList(formulaObj: FormulaResponse): React.ReactElement[] {
@@ -140,16 +139,13 @@ function Index(): React.ReactElement {
     const config = {
         options: {
             enableMenu: false
-        },
-        startup: {
-            pageReady: () => setHidden(false)
         }
     };
     return <Layout>
         <Head>
             <title>Formulas: {router.query.name}</title>
         </Head>
-        <div className={"py-5"} hidden={hidden}>
+        <div className={"py-5"}>
             <Card className={"md:mx-[10%] xl:mx-[18%] py-2 px-10 bg-opacity-30 dark:bg-opacity-100"}>
                 <MathJaxContext config={config}>
                     <div className={"to-print"}>
@@ -164,4 +160,4 @@ function Index(): React.ReactElement {
     </Layout>;
 }
 
-export default Index;
+export default withRouter(Index);
