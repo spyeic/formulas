@@ -55,6 +55,11 @@ export default function Layout({ children, customNavbar, showOnHover }: LayoutPr
                                 Phys121
                             </Link>
                         </NavbarItem>
+                        <NavbarItem>
+                            <Link href="/share">
+                                Share
+                            </Link>
+                        </NavbarItem>
                     </NavbarContent>
                     <NavbarContent justify="end">
                         {customNavbar}

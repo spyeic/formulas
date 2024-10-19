@@ -33,7 +33,7 @@ function Index(): React.ReactElement {
         <Script src="https://unpkg.com/mathlive"/>
         <Toaster />
         <div className={"py-5"}>
-            <Card className={"md:mx-[10%] xl:mx-[18%] py-2 px-10 bg-opacity-30 text-3xl"}>
+            <Card className={"md:mx-[10%] xl:mx-[18%] py-2 px-10 bg-opacity-30 dark:bg-opacity-100 text-3xl"}>
                 <math-field style={{
                     backgroundColor: "transparent"
                 }}>
