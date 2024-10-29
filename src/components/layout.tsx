@@ -8,6 +8,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import { Card } from "@nextui-org/card";
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -35,7 +36,7 @@ export default function Layout({ children, customNavbar, showOnHover }: LayoutPr
     return (
         <>
             <div className={"no-print-block"}>
-                <Navbar isBordered className={showOnHover ? "opacity-0 hover:opacity-100 duration-500": ""}>
+                <Navbar isBordered className={showOnHover ? "opacity-0 hover:opacity-100 duration-500" : ""}>
                     <NavbarBrand>
                         <p className="font-bold text-inherit">Formulas</p>
                     </NavbarBrand>
@@ -72,7 +73,11 @@ export default function Layout({ children, customNavbar, showOnHover }: LayoutPr
                     className={"max-w-full rounded-none" + (loading ? "" : " invisible")}
                 />
             </div>
-            {children}
+            <main className={"py-5"}>
+                <Card className={"md:mx-[10%] xl:mx-[18%] py-2 px-10 bg-opacity-30 dark:bg-opacity-100"}>
+                    {children}
+                </Card>
+            </main>
         </>
     );
 }

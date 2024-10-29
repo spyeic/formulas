@@ -145,18 +145,14 @@ function Index(): React.ReactElement {
         <Head>
             <title>Formulas: {router.query.name}</title>
         </Head>
-        <div className={"py-5"}>
-            <Card className={"md:mx-[10%] xl:mx-[18%] py-2 px-10 bg-opacity-30 dark:bg-opacity-100"}>
-                <MathJaxContext config={config}>
-                    <div className={"to-print"}>
-                        {formulaList}
-                    </div>
-                    <div className={"flex justify-center items-center py-3"}>
-                        <Button className={"w-[50%]"} variant={"light"} onClick={() => window.print()}>Print</Button>
-                    </div>
-                </MathJaxContext>
-            </Card>
-        </div>
+        <MathJaxContext config={config}>
+            <div className={"to-print"}>
+                {formulaList}
+            </div>
+            <div className={"flex justify-center items-center py-3"}>
+                <Button className={"w-[50%]"} variant={"light"} onClick={() => window.print()}>Print</Button>
+            </div>
+        </MathJaxContext>
     </Layout>;
 }
 
