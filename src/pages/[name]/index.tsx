@@ -1,4 +1,3 @@
-import { Card } from "@nextui-org/card";
 import { Button } from "@nextui-org/react";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Head from "next/head";

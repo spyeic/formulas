@@ -1,3 +1,4 @@
+import { Card } from "@nextui-org/card";
 import {
     Navbar,
     NavbarBrand,
@@ -8,7 +9,6 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { Card } from "@nextui-org/card";
 
 interface LayoutProps {
     children: React.ReactNode;
